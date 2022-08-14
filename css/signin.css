@@ -1,0 +1,132 @@
+#main {
+  width: 30%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#email,
+#password {
+  width: 70%;
+  padding: 15px 20px;
+  margin-top: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#btn {
+  padding: 20px 50px;
+  background-color: #44c6ac;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#btn:hover {
+  cursor: pointer;
+  box-shadow: white 0px 5px 15px;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://globalprimenews.com/wp-content/uploads/2020/05/banner.3006cc04-777x437.png");
+}
+#main > div,
+h2 {
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#img,
+img {
+  width: 180px;
+  height: 80px;
+}
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  #main {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  #main {
+    width: 60%;
+  }
+}
+h2 {
+  margin-top: 2px;
+}
+form {
+  margin-top: 6%;
+}
+
+#sear ~ div {
+  margin-top: 25px;
+}
+.nav {
+  height: 80px;
+  display: flex;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.left {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  /* border: 1px solid red; */
+  justify-content: space-around;
+}
+img {
+  height: 100%;
+  /* border: 1px solid red; */
+}
+#img:hover {
+  cursor: pointer;
+}
+#image {
+  padding: 15px;
+}
+#image:hover {
+  cursor: pointer;
+}
+#sear {
+  width: 50%;
+  margin: 5px;
+}
+input[type="search"] {
+  width: 100%;
+  padding: 15px 15px;
+  margin-top: 10px;
+  border: 1px solid grey;
+  background-color: transparent;
+  border-radius: 25px;
+}
+#cate {
+  font-size: 20px;
+}
+#cate > div {
+  padding: 15px 25px;
+  border-bottom: 1px solid grey;
+}
+#sear ~ div:hover {
+  cursor: pointer;
+  color: red;
+}
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  .nav {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .nav {
+    width: 100%;
+  }
+}

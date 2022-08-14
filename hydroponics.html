@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hydroponics</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/product.css" />
+  </head>
+  <body>
+    <!--Nav------------------------------------------------------->
+    <div class="nav">
+      <div class="left">
+        <div id="image" onclick="gotoindex()">
+          <img id="logoimg" src="logo.svg" alt="fraazo" />
+        </div>
+        <div id="sear">
+          <input
+            type="search"
+            placeholder="Find fresh vegetables,fruits and dairy..."
+          />
+        </div>
+        <div id="navabtus" onclick="gotoabt()">
+          <i class="fas fa-info-circle"></i> About Us
+        </div>
+        <div id="navsignup" onclick="gotoreg()">
+          <i class="fas fa-user-plus"></i> Sign-Up
+        </div>
+        <div id="navcart" onclick="gotocart()">
+          <i class="fas fa-shopping-cart"></i> Cart
+        </div>
+        <div id="navlogin" onclick="gotologin()">
+          <i class="fas fa-user"></i> Login
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------------------nav-end-->
+    <div id="container">
+      <!--Aside----------------------------------------------------->
+      <aside>
+        <button class="side" id="side-f" onclick="renderDry()">
+          <span id="plus"><i class="fas fa-plus"></i></span>&nbsp Dry Fruits
+        </button>
+        <div class="content">
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Dry Fruits, Nuts & Dried Dates</div>
+          </div>
+        </div>
+
+        <button class="side" onclick="renderFruits()">Fruits</button>
+        <div class="content">
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Grapes, Banana, Guava & Sapta</div>
+          </div>
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Apples, Pears, Mangoes</div>
+          </div>
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Papaya, Pineapple, Pomegranate</div>
+          </div>
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Exotic Fruits</div>
+          </div>
+        </div>
+        <button class="side" onclick="renderVeggi()">Vegetables</button>
+        <div class="content">
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Regular Veggies</div>
+          </div>
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Onion, Potato & Tamoto</div>
+          </div>
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Exotic Vegetables</div>
+          </div>
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Root vegetables</div>
+          </div>
+        </div>
+        <button class="side" onclick="renderHydroponics()">Hydroponics</button>
+        <div class="content">
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Hydroponics</div>
+          </div>
+        </div>
+        <button class="side" onclick="renderHerbs()">Herbs</button>
+        <div class="content">
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Herbs & Leafy Products</div>
+          </div>
+        </div>
+        <button class="side" onclick="renderDairy()">Dairy</button>
+        <div class="content">
+          <div>
+            <div class="arrow">></div>
+            <div class="category">Lassi, Rabri & Other Dairy Products</div>
+          </div>
+        </div>
+      </aside>
+      <!-------------------------------------------------------aside-end-->
+      <!--Section------------------------------------------------>
+      <section>
+        <div id="indicator">
+          <span id="home">Home &nbsp</span> > &nbsp <span id="category"></span>
+        </div>
+        <div id="veggi_type"></div>
+        <div id="display"></div>
+      </section>
+      <!---------------------------------------------------------->
+
+      <!--Footer-------------------------------------------------->
+    </div>
+
+    <footer>
+      <img src="/footer.png" alt="" />
+      <div>
+        <div id="footer">
+          <div>
+            <img src="/logo1.png" alt="" />
+            <div id="footer_p">
+              <p>
+                Order online vegetables & fruits directly from the farm. Fraazo
+                is online platform that allows customer to get farm fresh
+                produce directly from farmers.
+              </p>
+            </div>
+          </div>
+          <div>
+            <p>Useful Link</p>
+            <p><a href="">Privacy Policy</a></p>
+            <p><a href="">FAQ</a></p>
+            <p><a href="">Terms & Condition</a></p>
+          </div>
+          <div>
+            <p>Cities We Serve</p>
+            <p><a href="">Mumbai</a></p>
+            <p><a href="">Hyadrabad</a></p>
+            <p><a href="">Bangalore</a></p>
+            <p><a href="">Gurugram</a></p>
+            <p><a href="">Pune</a></p>
+          </div>
+          <div>
+            <p>Connect with us</p>
+            <p>
+              <a href=""
+                ><i class="far fa-envelope-open"></i>&nbsp support@fraazo.com</a
+              >
+            </p>
+            <p>
+              <a href=""
+                ><i class="fas fa-phone-alt"></i>&nbsp +91 9152291522</a
+              >
+            </p>
+            <p><a href="">Download The App</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">
+        © Copyrights 2021 - 2022. Fraazo. All Rights Reserved
+      </div>
+    </footer>
+    <!-------------------------------------------------------------->
+  </body>
+</html>
+<script src="js/goto.js"></script>
+<script src="js/product_data.js"></script>
+<script src="js/hydroponics.js"></script>

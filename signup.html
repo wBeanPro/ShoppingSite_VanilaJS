@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <form>
+      <div id="main">
+        <div id="img" onclick="gotoindex()">
+          <img src="logo.svg" alt="" />
+        </div>
+        <h2>Welcome to Fraazo!</h2>
+        <h4>Sign Up to get Started</h4>
+        <hr />
+        <div>E-mail</div>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter Your Mail ID"
+          required="required"
+        />
+        <div>Name</div>
+        <input id="user" type="text" placeholder="Enter Your Name" required />
+        <div>Password</div>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter Your Password"
+          required
+        />
+        <br /><br />
+        <input type="submit" name="" id="btn" />
+        <div id="login">
+          Already Have an Account.?<a href="signin.html"><span>Login</span> </a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
+
+<script src="js/signup.js"></script>
+<script src="js/goto.js"></script>

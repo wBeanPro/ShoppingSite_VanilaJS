@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/payment.css" />
+    <title>Secured-Checkout</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form id="myform">
+            <div class="row">
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color: navy"></i>
+                  <i class="fa fa-cc-amex" style="color: blue"></i>
+                  <i class="fa fa-cc-mastercard" style="color: red"></i>
+                  <i class="fa fa-cc-discover" style="color: orange"></i>
+                </div>
+                <label>Name on Card</label>
+                <input
+                  type="text"
+                  id="cname"
+                  name="cardname"
+                  placeholder="Card Holder Name"
+                  required
+                />
+                <label>Debit/Credit card number</label>
+                <input
+                  type="text"
+                  id="ccnum"
+                  name="cardnumber"
+                  placeholder="1111-2222-3333-4444"
+                  minlength="16"
+                  maxlength="16"
+                  required
+                />
+                <label>Exp Month</label>
+                <input
+                  type="text"
+                  id="expmonth"
+                  name="expmonth"
+                  placeholder="Month"
+                  required
+                />
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input
+                      type="text"
+                      id="expyear"
+                      name="expyear"
+                      placeholder="Year"
+                      minlength="4"
+                      maxlength="4"
+                      required
+                    />
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input
+                      type="text"
+                      id="cvv"
+                      name="cvv"
+                      placeholder="Ex:352"
+                      minlength="3"
+                      maxlength="3"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input type="submit" value="Generate OTP" class="btn" />
+          </form>
+        </div>
+      </div>
+      <div class="col-25"></div>
+    </div>
+  </body>
+</html>
+<script>
+  document.querySelector("#myform").addEventListener("submit", checkout);
+
+  function checkout(event) {
+    event.preventDefault();
+    window.location.href = "otp.html";
+    window.alert("OTP Sent to your Mobile Number");
+  }
+</script>

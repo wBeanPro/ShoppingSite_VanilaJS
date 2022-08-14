@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="homepage.css" /> -->
+  <link rel="stylesheet" href="css/index.css">
+  <title>Fraazo-Home</title>
+  <script src="https://kit.fontawesome.com/01d54b8bb8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <body>
+    <div class="nav">
+      <div class="left">
+        <div id="image" onclick="gotoindex()">
+          <img id="logoimg" src="logo.svg" alt="fraazo" />
+        </div>
+        <div id="sear">
+          <input type="search" placeholder="Find fresh vegetables,fruits and dairy..." />
+        </div>
+        <div id="navabtus" onclick="gotoabt()">
+          <i class="fas fa-info-circle"></i> About Us
+        </div>
+        <div id="navsignup" onclick="gotoreg()">
+          <i class="fas fa-user-plus"></i> Sign-Up
+        </div>
+        <div id="navcart" onclick="gotocart()">
+          <i class="fas fa-shopping-cart"></i> Cart
+        </div>
+        <div id="navlogin" onclick="gotologin()">
+          <i class="fas fa-user"></i> Login
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="adv">
+        <div class="advl">
+          <!-- slide start -->
+          <div class="slider">
+            <div class="slides">
+              <!-- radio button start -->
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <input type="radio" name="radio-btn" id="radio4" />
+              <input type="radio" name="radio-btn" id="radio5" />
+              <!-- radio button end -->
+              <!-- slide images start -->
+              <div class="slide first">
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/227.png?1638393235" alt="" />
+              </div>
+              <div class="slide">
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/109.png?1614253725" alt="" />
+              </div>
+              <div class="slide">
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/402.png?1638277138" alt="" />
+              </div>
+              <div class="slide">
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/371.png?1636512423" alt="" />
+              </div>
+              <div class="slide">
+                <img src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web_ban/371.png?1636512423" alt="" />
+              </div>
+              <!-- slide images end -->
+            </div>
+            <!-- manual nav start -->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+              <label for="radio5" class="manual-btn"></label>
+            </div>
+            <!-- manual nav end -->
+          </div>
+          <!-- slider end -->
+        </div>
+
+        <div class="advr">
+          <div>
+            <img src="https://fraazo.com/static/Web1-cafcda6bf22c11e6bbaed467d13a0eb7.png" />
+          </div>
+          <div>
+            <img src="https://fraazo.com/static/Web2-9a152d86240414d76ce205c491e47c4e.png" />
+          </div>
+          <div>
+            <img src="https://fraazo.com/static/Web3-9f5a46f22ff99bcfe079257218356413.png" />
+          </div>
+        </div>
+      </div>
+      <!-- Best Deal window start  -->
+      <div>
+        <div id="heading">
+          <h1>
+            BEST DEALS
+            <h4> &nbsp; (View all)</h4>
+          </h1>
+        </div>
+        <div id="items">
+
+
+        </div>
+      </div>
+      <!-- Best Deal window end -->
+      <!------------------------------------------------------Product-------->
+      <div id="specification">
+        <div>
+          <img class="cateimg" onclick="gotovegetable()"
+            src="https://fraazo-master.s3.ap-south-1.amazonaws.com/webban/Vegetables.png" />
+        </div>
+        <div>
+          <img class="cateimg" onclick="gotofruits()"
+            src="https://fraazo-master.s3.ap-south-1.amazonaws.com/webban/Fruits.png" />
+        </div>
+        <div>
+          <img class="cateimg" onclick="gotoherbs()"
+            src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web/1.png?1619161151" />
+        </div>
+        <div>
+          <img class="cateimg" onclick="gotoDry()"
+            src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web/201.png?1635224001" />
+        </div>
+        <div>
+          <img class="cateimg" onclick="gotoHydro()"
+            src="https://fraazo-master.s3.ap-south-1.amazonaws.com/webban/hydroponics_web.png" />
+        </div>
+        <div>
+          <img class="cateimg" onclick="gotoDairy()"
+            src="https://s3.ap-south-1.amazonaws.com/fraazo-prod/web/4.png?1638600349" />
+        </div>
+      </div>
+      <!---------------------------------------------------Product End--------->
+      <div>
+        <div id="heading">
+          <h1>
+            VEGETABLES
+            <h4> &nbsp; (View all)</h4>
+          </h1>
+        </div>
+        <div id="itemsv">
+
+        </div>
+      </div>
+      <div>
+        <div id="heading">
+          <h1>
+            FRUITS
+            <h4> &nbsp; (View all)</h4>
+          </h1>
+        </div>
+        <div id="itemsf">
+        </div>
+      </div>
+
+      <div>
+        <div id="heading">
+          <h1>
+            DRY FRUITS
+            <h4> &nbsp; (View all)</h4>
+          </h1>
+        </div>
+        <div id="itemsdry">
+        </div>
+      </div>
+
+      <div>
+        <div id="heading">
+          <h1>
+            HERBS
+            <h4> &nbsp; (View all)</h4>
+          </h1>
+        </div>
+        <div id="itemsherb">
+        </div>
+      </div>
+
+
+
+      <div>
+        <div id="heading">
+          <h1>
+            HYDROPONICS
+            <h4> &nbsp; (View all)</h4>
+          </h1>
+        </div>
+        <div id="itemsh">
+
+
+        </div>
+      </div>
+      <div>
+        <div id="heading">
+          <h1>
+            DAIRY
+            <h4> &nbsp; (View all)</h4>
+          </h1>
+        </div>
+        <div id="itemsd">
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <img src="https://fraazo.com/static/footerDesign-26fcca451f726500fd06e7fc02d09cb4.svg" height="143px" />
+    </div>
+
+
+    <div id="about">
+      <div>
+        <div id="up">
+          <img id="btmimg" src="bottom-logo.svg" height="70px" width="250px" />
+        </div>
+        <div>
+          <p>
+            Order online vegetables & fruits directly from the farm. Fraazo is
+            online platform that allows customer to get farm fresh produce
+            directly from farmers.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="a1">
+          <h3>Useful links</h3>
+        </div>
+        <div>
+          <h4 class="d1">Privency Policy</h4>
+        </div>
+        <div>
+          <h4 class="d1">FAQ</h4>
+        </div>
+        <div>
+          <h4 class="d1">Terms & Condition</h4>
+        </div>
+      </div>
+      <div>
+        <div class="a1">
+          <h3>Cities We Serve</h3>
+        </div>
+        <div>
+          <h4 class="d1">Mumbai</h4>
+        </div>
+        <div>
+          <h4 class="d1">Hyadrabad</h4>
+        </div>
+        <div>
+          <h4 class="d1">Bangalore</h4>
+        </div>
+        <div>
+          <h4 class="d1">Gurugram</h4>
+        </div>
+      </div>
+      <div>
+        <div class="a1">
+          <h3>Contact us on</h3>
+        </div>
+        <div>
+          <h4 class="d1">support@fraazoo.com</h4>
+        </div>
+        <div>
+          <h4 class="d1">+91 9152291522</h4>
+        </div>
+      </div>
+    </div>
+    <div id="belownav">
+      <h1>Fresh Fruits & Vegetables Grocery Shopping Online</h1>
+      <p>
+        The quality of fruits & vegetables is synonymous with its freshness, while getting fresh fruits and vegetables
+        is a tedious task at times but with Fraazo you can get it delivered at your doorstep. Fraazo brings a wide range
+        of farm fresh fruits, vegetables and dairy products to you, all in just a click. We currently serve about more
+        than 3lacs+ happy customers in Mumbai, Navi Mumbai, Thane, Kalyan-Dombivli and Virar. Fraazo has made online
+        shopping of fresh produce much easier with its hassle-free home delivery options. You can choose the delivery
+        slot as per your choice and schedule your order accordingly. Or you can simply opt for the option of 90 mins
+        Express Delivery and get your order delivered in not more than 90 mins. The farm fresh fruits and vegetables on
+        Fraazo are available at best prices compared to other vendors & supermarkets. Plus with so many exciting offers,
+        one can save up to 20% on their Monthly grocery budgets. No need to wait in long queues in crowded supermarkets
+        or local mandis for getting the best prices on veggies. Kick the stress out & just Fraazo your dose of freshness
+        with savings at the comfort of your home. Fraazo directly sources fresh fruits and veggies from an extensive
+        network of farmers across Maharashtra, hence bringing you fresh produce straight from farm to table in less than
+        18 hours. With our Safe & Hygienic packaging and minimal multiple handling, we ensure you get the best quality
+        fresh produce. <br><br>
+
+        The fruits and vegetables are 100% hand-picked fresh from farm, while some products are hydroponically-grown.
+        The wide range of fruits and veggies on Fraazo include more than 100+ farm fresh vegetables and fruits, starting
+        from regular veggies like dudhi, cauliflower, beetroot, cabbage, etc. to exotic veggies like broccoli, lettuce
+        etc. We also provide the essential vegetable combos like Onion, Potato, Tomato Combo, Salad Combo, Fresh Cut-Veg
+        Combos or Fruit Combos like Banana, Apple Combo, & more. There are a lot of exciting deals on vegetables &
+        fruits, every day of the week, the major highlights being Monday Mandi, Veggie Wednesday, Freelivery Thursday &
+        Fruit Friday.For payments, you can choose from the multiple payment options as Fraazo accepts Debit card, Credit
+        card, UPI options like iMobile, Google Pay, 8+ e-Wallet options like Phonepe, JioPay, MobiKwik, Sodexo,
+        NetBanking and Cash on Delivery (COD). If you ever have an issue with missing items or any quality issue, you
+        can raise your concern with us in 48 hrs & we shall refund/ replace your product with
+        “no-questions-asked-policy”. You can simply connect with our Customer Support team via Chat Support or Call on
+        9152291522.
+      </p>
+    </div>
+    <div id="bgcolor">
+      <h3>
+        © Copyrights 2021 - 2022. Fraazo. All Rights Reserved.
+      </h3>
+    </div>
+    <script src="js/product_data.js"></script>
+    <script src="js/herbs.js"></script>
+  </body>
+
+</html>
+<script src="js/goto.js"></script>
+<script src="js/index.js"></script>

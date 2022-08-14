@@ -1,0 +1,261 @@
+body{
+    padding:0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+aside{
+    width: 17%;
+    padding-right: 20px;
+    padding-top: 40px;
+    margin-top: 80px;
+}
+
+section{
+    width: 83%;
+    margin-top: 80px;
+}
+
+#indicator{
+    padding-top: 20px;
+    font-size: 14px;
+    letter-spacing: px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: rgb(43, 43, 43);
+}
+
+#container1{
+    width: 85%;
+    margin: auto;
+}
+
+#display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#display > div{
+    border: #eeecec solid 1px;
+    box-shadow: 0;
+    transition: box-shadow 0.5s;
+    border-radius: 5px;
+}
+
+#display > div:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+}
+
+img{
+    width: 100%;
+    background-color: #F9F9F9;
+}
+
+.namebox{
+    padding-left: 15px;
+    font-size: 16px;
+    color: rgb(43, 43, 43);
+    margin-top: 12px;
+}
+
+.botbox{
+    display:flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    margin-top: 10px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.btn{
+    height: 25px;
+    color: #5DC6AD;
+    background: transparent;
+    border: #5DC6AD solid 1px;
+    border-radius: 20px;
+    padding: 4px 15px;
+    font-size: 13px;
+    height: 20px;
+    width:50px
+}
+.btn:hover{
+    background: #5DC6AD;
+    color: white;
+}
+.weight{
+    font-size: 14px;
+    color: rgb(112, 111, 111);
+    
+}
+.price{
+    font-size: 16px;
+    color: rgb(43, 43, 43);
+}
+#veggi_type{
+    font-size: 18px;
+    letter-spacing: px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#home{
+    color: rgb(156, 156, 156);
+}
+
+.side{
+    padding: 15px 22px;
+    border: none;
+    border-bottom: rgb(231, 230, 230) solid 1px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(43, 43, 43);
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+}
+#side-f{
+    padding: 0;
+    padding-bottom: 22px;
+}
+#plus{
+    font-size: 13px;
+    color: #5DC6AD;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+}
+.content{
+    display: none;
+    font-size: 16px;
+    color: rgb(156, 156, 156);
+}
+.content > div{
+    padding-bottom:15px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: rgb(231, 230, 230) solid 1px;
+}
+.content > div :hover{
+    color: rgb(97, 96, 96);
+}
+.arrow{
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+footer > div{
+    background-color: #195843;
+    color: white;
+    height: 400px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: -5px;
+}
+
+#footer{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 60px;
+}
+#footer_p{
+    padding-right: 50px;
+}
+#footer > div > p > a, #footer_p > p{
+    color:#b8ffef;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#copyright{
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+/*------- Navigation------------------------*/
+
+#sear ~ div {
+    margin-top: 25px;
+  }
+  .nav {
+    height: 80px;
+    display: flex;
+    margin: auto;
+    border-bottom: rgb(226, 226, 226) solid 2px;
+    background-color: #F9F9F9;
+    position: fixed;
+    width: 100%;
+  }
+  .left {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    font-size: 20px;
+    color: rgb(88, 88, 88);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #logoimg{
+      height: 100%;
+      cursor: pointer;
+  }
+  #image{
+      padding-bottom: 15px;
+      padding-top: 15px;
+  }
+  #sear {
+    width: 50%;
+    margin: 5px;
+  }
+  input[type="search"] {
+    width: 100%;
+    padding: 15px 15px;
+    margin-top: 10px;
+    border: 1px solid grey;
+    background-color: transparent;
+    border-radius: 25px;
+  }
+  #cate {
+    font-size: 20px;
+  }
+  #cate > div {
+    padding: 15px 25px;
+    border-bottom: 2px solid rgb(150, 150, 150);
+  }
+  #sear ~ div:hover {
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+  }
+  @media only screen and (min-width: 0px) and (max-width: 375px) {
+    .nav {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 376px) and (max-width: 768px) {
+    .nav {
+      width: 100%;
+    }
+  }
